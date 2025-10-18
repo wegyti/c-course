@@ -1,0 +1,102 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+
+
+	//1. Oblicz średnią prędkość pojazdu
+
+	//Wczytaj od użytkownika dystans(w kilometrach) i czas podróży(w godzinach).
+	//Oblicz średnią prędkość i wypisz wynik w km / h.
+	
+	double dystans, czas, srednia_predkosc, dlugosc, szerokosc, pole, przekatna, moc, godz_pr, koszt, cena_1kw, tax, income, lenght, height, paint_l, paint ;
+	int godziny, minuty, time, sek ;
+		cout << "podaj dystans" << endl;
+	cin >> dystans;
+	cout << "podaj czas" << endl;
+	cin >> czas;
+
+	srednia_predkosc = dystans / czas;
+
+	cout << "srednia predkosc" << srednia_predkosc << "km/h" <<endl;
+	
+
+		//2. Oblicz pole prostokąta i przekątną
+
+		//Program wczytuje długość i szerokość prostokąta, a następnie oblicza jego pole i długość przekątnej.
+	cout << "podaj długosc" << endl;
+	cin >> dlugosc;
+	cout << "podaj szerokosc" << endl;
+	cin >> szerokosc;
+	pole = dlugosc * szerokosc;
+	przekatna = sqrt(dlugosc * dlugosc + szerokosc * szerokosc);
+	cout << "pole=" << pole;
+	cout << "przekatna=" << przekatna <<endl;
+
+
+		//3. Przeliczanie sekund na godziny, minuty i sekundy
+
+		//Wczytaj liczbę sekund i oblicz, ile to godzin, minut i sekund.
+	cout << "podaj czas w sekundach" << endl;
+	cin >> time;
+	godziny = time / 3600;
+	minuty = time / 60 - godziny * 60;
+	sek = time - minuty * 60 - godziny * 3600;
+	cout << "liczba:" << godziny << "godz" << minuty << "min" << sek << "sek" << endl;
+	 
+	 
+
+
+
+		//4. Oblicz miesięczne zużycie energii
+
+		//Program wczytuje moc urządzenia(w watach) oraz liczbę godzin pracy dziennie.
+		//Oblicz koszt miesięcznego zużycia energii, przyjmując cenę 1 kWh od użytkownika.
+	cena_1kw = 0.0011;
+		cout << "podaj moc urzadzenia" << endl;
+	cin >> moc;
+	cout << "podaj lieczbe godzin pracy dziennie" << endl;
+	cin >> godz_pr;
+	koszt = cena_1kw * godz_pr * moc*30;
+	cout << "miesieczny koszt=" << koszt << endl;
+
+
+		//5. Oblicz należny podatek dochodowy
+	
+		//Wczytaj kwotę dochodu użytkownika i oblicz podatek wg uproszczonego wzoru :
+
+		//jeśli dochód ≤ 30 000 zł → podatek 12 %,
+
+			//jeśli dochód > 30 000 zł → podatek 12 % od 30 000 zł + 32 % od nadwyżki.
+	cout << "podaj dochod" << endl;
+	cin >> income;
+
+	if (income <= 30000)
+	 tax = income * 0.12;
+
+	else 
+		income > 30000;
+	 tax = 30000 * 0.12 + (income - 30000) * 0.32;
+
+	 cout << "twoj podatek wynosi" << tax << "zl" << endl;
+			//6. Oblicz ilość farby potrzebnej do pomalowania pokoju
+
+			//Program wczytuje długość, szerokość i wysokość pokoju(w metrach), oraz informację, ile metrów kwadratowych można pomalować 1 litrem farby.
+			//Oblicz, ile litrów farby trzeba kupić.
+			
+	 cout << "podaj ile metrow kwadratowych mozna pomalowac 1 litrem farby" << endl;
+	 cin >> paint_l;
+	 cout << "podaj długosc" << endl;
+	 cin >> lenght;
+	 cout << "podaj wysokosc" << endl;
+	 cin >> height;
+
+	 paint = lenght * height / paint_l;
+	 cout << "ilosc farby potrzebna do pomalowania sciany " << paint << "l" <<endl;
+
+
+	 return 0;
+}
