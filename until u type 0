@@ -1,0 +1,22 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+	int i, liczba;
+	do {
+		cout << "podaj liczbe" << endl;
+		cin >> liczba;
+		
+	}
+	while (liczba != 0); {
+
+	}
+	
+
+
+	
+	return 0;
+}
