@@ -1,0 +1,42 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+
+int main()
+{
+	int a,b,c;
+	cout << "podaj pierwsza liczbe" << endl;
+	cin >> a;
+	cout << "podaj druga liczbe" << endl;
+	cin >> b;
+	cout << "podaj trzecia liczbe" << endl;
+	cin >> c;
+
+	if (a < b && c > b) {
+		cout << "kolejnosc liczb: " << a << ", " << b << ", " << c;
+	}
+	else if (a < c && b > c) {
+		cout << "kolejnosc liczb: " << a << ", " << c << ", " << b;
+	}
+	else if (b < a && c > a) {
+		cout << "kolejnosc liczb: " << b << ", " << a << ", " << c;
+	}
+	else if (b < c && a > c) {
+		cout << "kolejnosc liczb: " << b << ", " << c << ", " << a;
+	}
+	else if (c < a && b > a) {
+		cout << "kolejnosc liczb: " << c << ", " << a << ", " << b;
+	}
+	else if (c < b && a > b) {
+		cout << "kolejnosc liczb: " << c << ", " << b << ", " << a;
+	}
+
+	return 0;
+}
+
+
+
+	
+	
