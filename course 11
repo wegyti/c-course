@@ -1,0 +1,38 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+
+int main()
+{
+	int liczba;
+
+	cout << "podaj liczbe";
+	cin >> liczba;
+
+	if (liczba > 0) {
+		cout << "liczba dodatnia";
+		if (liczba % 2 == 0) {
+			cout << "liczba parzysta";
+		}
+	}
+
+	else if (liczba < 0) {
+		cout << "liczba ujemna"; 
+		
+	}
+
+	
+	
+	else
+		cout << "jest zerem";
+	
+
+	return 0;
+}
+
+
+
+	
+	
