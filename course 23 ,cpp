@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+	int i,n;
+	cout << "podaj liczbe" << endl;
+	cin >> i;
+	for (int i = 2; n <= i; i++) {
+		if (n % i == 0) {
+			cout << "nie jest liczba pierwsza";
+		}
+		else {
+			cout << "jest liczba pierwsza";
+		}
+
+	}
+	
+
+
+	
+	return 0;
+}
+
