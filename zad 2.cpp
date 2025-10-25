@@ -4,6 +4,6 @@ int iloczyn(int a, int b) {
 	return iloczyn;
 }
 int main() {
-	cout << (2, 4);
+	cout << iloczyn(2, 4);
 	return 0;
 }
