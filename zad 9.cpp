@@ -1,6 +1,6 @@
 //9. Napisz funkcję minimum, która zwraca mniejszą z dwóch liczb.
 int minimum(int a, int b){
-	if (a < b) {
+	if (a > b) {
 		return b;
 
 	}
